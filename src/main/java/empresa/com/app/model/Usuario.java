@@ -10,7 +10,7 @@ import jakarta.persistence.Table;
 @Table(name="usuario")
 public class Usuario {
 	@Id
-	@GeneratedValue(stratey=GenerationType.IDENTITY)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id_cliente;
 	private String nombre;
 	private String apellidos;

@@ -2,7 +2,17 @@ package empresa.com.app.model;
 
 import java.sql.Date;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="orden")
 public class Orden {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id_orden;
 	private Integer id_cliente;
 	private Integer numero;
