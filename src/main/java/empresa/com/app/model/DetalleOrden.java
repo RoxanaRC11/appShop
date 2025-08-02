@@ -8,6 +8,7 @@ public class DetalleOrden {
 	private Integer cantidad;
 	private Double precio;
 	private Double total;
+	private Double totalFinal;
 	public DetalleOrden() {
 		
 	}
